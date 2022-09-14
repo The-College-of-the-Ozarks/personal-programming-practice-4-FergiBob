@@ -27,6 +27,7 @@ print('\nThis program performs speed conversions from miles per hour.\n')
 #menu
 opt = input('Please choose one of the following options:\n\n    [1] Miles per hour to kilometers per hour.\n\n    [2] Miles per hour to meters per second.\n\n    [3] Miles per hour to feet per second.\n\n')
 
+#I was not thinking when I made the input line and didn't think to seperate them out into print lines and follow that with an input.... Please excuse the mess
 
 #outputs
 
