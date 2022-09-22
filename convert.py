@@ -17,11 +17,36 @@ def mph_to_ms(mph):
 def mph_to_fts(mph):
     return mph*5280/3600
 
-mph = input("Input speed in mph: ")
-mph = float(mph)
+#def mph_input(mph):
+    
+   # return mph = float(input("Input speed in mph: "))
 
-print("Speed in kph is", mph_to_kph(mph))
 
-print("Speed in m/s is", mph_to_ms(mph))
+print('\nThis program performs speed conversions from miles per hour.\n')
 
-print("Speed in ft/s is", mph_to_fts(mph))
+#menu
+opt = input('Please choose one of the following options:\n\n    [1] Miles per hour to kilometers per hour.\n\n    [2] Miles per hour to meters per second.\n\n    [3] Miles per hour to feet per second.\n\n')
+
+#I was not thinking when I made the input line and didn't think to seperate them out into print lines and follow that with an input.... Please excuse the mess
+
+#outputs
+
+if opt == '1':
+    mph = float(input("Input speed in mph: "))
+
+    print("Speed in kph is", mph_to_kph(mph))
+
+elif opt == '2':
+    mph = float(input("Input speed in mph: "))
+
+    print("Speed in m/s is", mph_to_ms(mph))
+    
+elif opt == '3':
+    mph = float(input("Input speed in mph: "))
+
+    print("Speed in ft/s is", mph_to_fts(mph))
+
+else:
+    mph = float(input("Input speed in mph: "))
+
+    print('Error: Invalid option. Program will close.')
